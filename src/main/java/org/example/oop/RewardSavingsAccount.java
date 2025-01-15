@@ -1,4 +1,4 @@
-package org.example;
+package org.example.oop;
 
 public class RewardSavingsAccount extends SavingsAccount implements Notification, Rewardable {
     private int rewardPoints;

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.oop;
 
 abstract class BankAccount {
 
