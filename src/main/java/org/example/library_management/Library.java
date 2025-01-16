@@ -1,4 +1,4 @@
-package org.example.oop_design;
+package org.example.library_management;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,7 +20,7 @@ public class Library {
     public Library(List<Book> books, List<User> users, Map<Book, User> borrowedBooks) {
         this.books = books;
         this.users = users;
-        this.borrowedBooks = borrowedBooks;
+        this.borrowedBooks = new HashMap<>(borrowedBooks);
     }
 
     public List<Book> getBooks() {

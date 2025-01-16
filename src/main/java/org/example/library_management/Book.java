@@ -1,4 +1,4 @@
-package org.example.oop_design;
+package org.example.library_management;
 
 public class Book {
     private String title;
