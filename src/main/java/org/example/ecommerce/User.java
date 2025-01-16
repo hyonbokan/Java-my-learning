@@ -10,7 +10,7 @@ public class User {
     private long userId;
     private String email;
     private Cart cart;
-    private List<Order> orderHistory = new ArrayList<>();
+    private List<Order> orderHistory;
 
     public User(String name, long userId, String email, Cart cart, List<Order> orderHistory) {
         this.name = name;
@@ -18,6 +18,14 @@ public class User {
         this.email = email;
         this.cart = cart;
         this.orderHistory = new ArrayList<>(orderHistory);
+    }
+
+    public User(String name, long userId, String email, Cart cart) {
+        this.name = name;
+        this.userId = userId;
+        this.email = email;
+        this.cart = cart;
+        this.orderHistory = new ArrayList<>();
     }
 
     public String getName() {
@@ -34,5 +42,13 @@ public class User {
 
     public void setUserId(long userId) {
         this.userId = userId;
+    }
+
+    public List<Order> getOrderHistory() {
+        return orderHistory;
+    }
+
+    public void setOrderHistory(List<Order> orderHistory) {
+        this.orderHistory = orderHistory;
     }
 }

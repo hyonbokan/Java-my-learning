@@ -8,8 +8,8 @@ public class Admin {
     private List<User> users;
 
     public Admin(List<Product> products, List<User> users) {
-        this.products = products;
-        this.users = users;
+        this.products = new ArrayList<>(products);
+        this.users = new ArrayList<>(users);
     }
 
     public Admin() {
@@ -34,13 +34,19 @@ public class Admin {
     }
 
     public void addProduct(Product productToAdd) {
+        if (products.contains(productToAdd)) {
+            return;
+        }
         products.add(productToAdd);
         System.out.println(productToAdd.getProductName() + " is added to the system.");
     }
 
     public void registerUser(User userToRegister) {
+        if (users.contains(userToRegister)) {
+            return;
+        }
         users.add(userToRegister);
-        System.out.println(userToRegister.getName() + " is added to the system.");
+        System.out.println(userToRegister.getName() + " has been registered in the system.");
     }
 
     public void displayProducts() {
