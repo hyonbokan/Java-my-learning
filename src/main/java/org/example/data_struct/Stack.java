@@ -1,15 +1,6 @@
-package org.example;
+package org.example.data_struct;
 
-import org.example.ecommerce.*;
-
-public class Main {
-    public static void main(String[] args) {
-
-    }
-
-}
-
-class Stack {
+public class Stack {
     private int[] arr;
     private int top;
     private int capacity;
@@ -35,8 +26,13 @@ class Stack {
         return arr[top--];
     }
 
-    public int peak() {
-        return arr[top];
+    public int peek() {
+        if (top == -1) {
+            throw new RuntimeException("Stack is empty.");
+        }
+        return top;
     }
-
+    public boolean isEmpty() {
+        return top == -1;
+    }
 }
