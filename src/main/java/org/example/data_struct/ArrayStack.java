@@ -1,11 +1,11 @@
 package org.example.data_struct;
 
-public class Stack {
+public class ArrayStack {
     private int[] arr;
     private int top;
     private int capacity;
 
-    public Stack(int size) {
+    public ArrayStack(int size) {
         arr = new int[size];
         top = -1;
         capacity = size;
