@@ -1,14 +1,14 @@
 package org.example.data_struct;
 
-class Node {
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
+//class Node {
+//    int data;
+//    Node next;
+//
+//    Node(int data) {
+//        this.data = data;
+//        this.next = null;
+//    }
+//}
 
 public class LinkedListStack {
     private Node top;

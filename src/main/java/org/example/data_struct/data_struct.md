@@ -18,15 +18,16 @@ Think of a stack of plates: You add plates to the top and remove from the top.
   Common Interview Question
   "Can you implement a stack from scratch in Java?"
 
-How to Answer
 ✅ Step 1: Explain the two common implementations:
 
 Using an array (Fixed size, fast access)
 Using a linked list (Dynamic size, slower but flexible)
+
 ✅ Step 2: State which one you're implementing and why.
 
 If using arrays, mention its O(1) push/pop time complexity.
 If using linked lists, mention that it avoids fixed size limitations.
+
 ✅ Step 3: Start coding while explaining each method.
 
 
@@ -59,9 +60,11 @@ How to Answer
 
 Using an array (Fixed size, fast access)
 Using a linked list (Dynamic size, flexible)
+
 ✅ Step 2: State which one you're implementing and why.
 
 If using arrays, mention that O(1) enqueue/dequeue is possible with a circular queue.
 If using linked lists, mention that it avoids fixed-size limitations.
+
 ✅ Step 3: Start coding while explaining each method.
 
